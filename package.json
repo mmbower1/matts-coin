@@ -1,0 +1,32 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server1": "nodemon server 5001 http://localhost:5001",
+    "server2": "nodemon server 5002 http://localhost:5002",
+    "server3": "nodemon server 5003 http://localhost:5003",
+    "server4": "nodemon server 5004 http://localhost:5004",
+    "server5": "nodemon server 5005 http://localhost:5005",
+    "server6": "nodemon server 5006 http://localhost:5006",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sha256": "^0.2.0",
+    "uuid": "^9.0.1"
+  }
+}
